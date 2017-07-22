@@ -1,0 +1,86 @@
+<GuiXml>
+	<Controls>
+		
+		<Line name="MemCheckLine" thickness="1" color="FFFFFF" virtual="true" />
+		<Line name="MemCheckDot" thickness="2" color="FF0000" hidden="true" virtual="true" />
+		
+		<TopLevelControl name="MemCheck" hidden="true" mouseEnabled="true" clampedToScreen="true" movable="true">
+			<Dimensions x="420" y="220" />
+			<Anchor point="CENTER" />
+			<Controls>
+				<Backdrop name="$(parent)Bg" integralWrapping="true">
+					<Anchor point="TOPLEFT" offsetX="-50" offsetY="-25"/>
+					<Anchor point="BOTTOMRIGHT" offsetX="10" offsetY="5"/>
+					<Edge file="EsoUI/Art/ChatWindow/chat_BG_edge.dds" edgeFileWidth="256" edgeFileHeight="256" edgeSize="32"/>
+					<Center file="EsoUI/Art/ChatWindow/chat_BG_center.dds" />
+					<Insets left="32" top="32" right="-32" bottom="-32" />
+				</Backdrop>
+				<Line name="$(parent)Abscissa100" inherits="MemCheckLine">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="0" />
+					<Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="410" offsetY="0" />
+				</Line>
+				<Line name="$(parent)Abscissa80" inherits="MemCheckLine">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="40" />
+					<Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="410" offsetY="40" />
+				</Line>
+				<Line name="$(parent)Abscissa60" inherits="MemCheckLine">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="80" />
+					<Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="410" offsetY="80" />
+				</Line>
+				<Line name="$(parent)Abscissa40" inherits="MemCheckLine">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="120" />
+					<Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="410" offsetY="120" />
+				</Line>
+				<Line name="$(parent)Abscissa20" inherits="MemCheckLine">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="160" />
+					<Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="410" offsetY="160" />
+				</Line>
+				<Line name="$(parent)Abscissa0" inherits="MemCheckLine">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="200" />
+					<Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="410" offsetY="200" />
+				</Line>
+				
+				<Line name="$(parent)OrdinateStart" inherits="MemCheckLine">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="0" />
+					<Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="200" />
+				</Line>
+				<Line name="$(parent)OrdinateEnd" inherits="MemCheckLine">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="410" offsetY="0" />
+					<Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="410" offsetY="200" />
+				</Line>
+				
+				<Label name="$(parent)AbscissaLabel0" font="ZoFontGameSmall" horizontalAlignment="RIGHT">
+					<Dimensions x="50" y="30" />
+					<Anchor point="RIGHT" relativeTo="$(parent)Abscissa0" relativePoint="LEFT" offsetX="-5" offsetY="5" />
+				</Label>
+				<Label name="$(parent)AbscissaLabel20" font="ZoFontGameSmall" horizontalAlignment="RIGHT">
+					<Dimensions x="50" y="30" />
+					<Anchor point="RIGHT" relativeTo="$(parent)Abscissa20" relativePoint="LEFT" offsetX="-5" offsetY="5" />
+				</Label>
+				<Label name="$(parent)AbscissaLabel40" font="ZoFontGameSmall" horizontalAlignment="RIGHT">
+					<Dimensions x="50" y="30" />
+					<Anchor point="RIGHT" relativeTo="$(parent)Abscissa40" relativePoint="LEFT" offsetX="-5" offsetY="5" />
+				</Label>
+				<Label name="$(parent)AbscissaLabel60" font="ZoFontGameSmall" horizontalAlignment="RIGHT">
+					<Dimensions x="50" y="30" />
+					<Anchor point="RIGHT" relativeTo="$(parent)Abscissa60" relativePoint="LEFT" offsetX="-5" offsetY="5" />
+				</Label>
+				<Label name="$(parent)AbscissaLabel80" font="ZoFontGameSmall" horizontalAlignment="RIGHT">
+					<Dimensions x="50" y="30" />
+					<Anchor point="RIGHT" relativeTo="$(parent)Abscissa80" relativePoint="LEFT" offsetX="-5" offsetY="5" />
+				</Label>
+				<Label name="$(parent)AbscissaLabel100" font="ZoFontGameSmall" horizontalAlignment="RIGHT">
+					<Dimensions x="50" y="30" />
+					<Anchor point="RIGHT" relativeTo="$(parent)Abscissa100" relativePoint="LEFT" offsetX="-5" offsetY="5" />
+				</Label>
+				
+				<Label name="$(parent)ActualValue" font="ZoFontHeader2" horizontalAlignment="RIGHT">
+					<Dimensions x="75" y="45" />
+					<Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="-15" />
+				</Label>
+				
+			</Controls>
+		</TopLevelControl>
+		
+	</Controls>
+</GuiXml>
